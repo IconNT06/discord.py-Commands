@@ -25,7 +25,6 @@ async def wetter(ctx, *, city: str):
           embed.add_field(name="`Luftfeuchtigkeit:`", value=f"**{current_humidity}%**", inline=False)
           embed.add_field(name="`Luftdruck:`", value=f"**{current_pressure}hPa**", inline=False)
           embed.set_thumbnail(url="https://i.ibb.co/CMrsxdX/weather.png")
-          embed.set_footer(text='Developed by IconNT06', icon_url='https://media.discordapp.net/attachments/783038584176640020/964994528413114429/standard_8_1.png')
           await channel.send(embed=embed)
   else:
     await channel.send("Stadt nicht gefunden!")
