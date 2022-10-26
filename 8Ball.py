@@ -21,6 +21,4 @@ async def kugel(ctx, question):
     response = random.choice(responses)
     embed=discord.Embed(title="Die magische Kugel hat gesprochen!", color=0x22a7f0)
     embed.add_field(name='`Antwort:`', value=f'{response}', inline=False)
-    embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/783038584176640020/971442788195516416/kisspng-computer-icons-magic-crystal-ball-emoji-5b37fc1e0bb1b7.1756704115303956780479-removebg-preview.png')
-    embed.set_footer(text='Developed by IconNT06', icon_url='https://media.discordapp.net/attachments/783038584176640020/964994528413114429/standard_8_1.png')
     await ctx.send(embed=embed)
