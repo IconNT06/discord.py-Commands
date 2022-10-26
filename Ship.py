@@ -24,5 +24,4 @@ async def ship(ctx, user_1 : discord.Member, user_2 : discord.Member):
     response = random.choice(responses)
     embed=discord.Embed(title="Hier ist euer Ergebnis!", color=0x22a7f0)
     embed.add_field(name='`Antwort:`', value=f"{user_1.mention} und {user_2.mention}{response}", inline=False)
-    embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/783038584176640020/1001564396121767966/hand-drawn-heart-11549459255jz1gvm6cwh-removebg-preview.png')
     await ctx.send(embed=embed)
